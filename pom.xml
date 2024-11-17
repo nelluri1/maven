@@ -1,4 +1,5 @@
 
+
 <build>
   <plugins>
     <!-- Maven Compiler Plugin (updated for Java 17 support) -->
@@ -18,46 +19,56 @@
       <version>3.3.0</version> <!-- Updated to a more recent version -->
     </plugin>
 
-    <!-- Other plugins can remain as they are -->
+    <!-- Maven Release Plugin (updated version) -->
     <plugin>
       <artifactId>maven-release-plugin</artifactId>
+      <version>2.5.0</version> <!-- Updated to latest stable version -->
       <configuration>
         <autoVersionSubmodules>true</autoVersionSubmodules>
       </configuration>
     </plugin>
 
+    <!-- Maven Site Plugin (with additional report plugins) -->
     <plugin>
       <artifactId>maven-site-plugin</artifactId>
+      <version>3.9.1</version> <!-- Updated version -->
       <configuration>
         <reportPlugins>
           <plugin>
             <artifactId>maven-checkstyle-plugin</artifactId>
+            <version>3.1.2</version> <!-- Updated version -->
           </plugin>
 
           <plugin>
             <artifactId>maven-jxr-plugin</artifactId>
+            <version>3.0</version> <!-- Updated version -->
           </plugin>
 
           <plugin>
             <artifactId>maven-javadoc-plugin</artifactId>
+            <version>3.2.0</version> <!-- Updated version -->
           </plugin>
 
           <plugin>
             <artifactId>maven-pmd-plugin</artifactId>
+            <version>3.14.0</version> <!-- Updated version -->
           </plugin>
 
           <plugin>
             <artifactId>maven-surefire-report-plugin</artifactId>
+            <version>3.0.0</version> <!-- Updated version -->
           </plugin>
 
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>findbugs-maven-plugin</artifactId>
+            <version>3.0.5</version> <!-- Updated version -->
           </plugin>
 
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>taglist-maven-plugin</artifactId>
+            <version>2.5</version> <!-- Updated version -->
           </plugin>
         </reportPlugins>
       </configuration>
@@ -66,61 +77,85 @@
 
   <pluginManagement>
     <plugins>
+      <!-- Maven Checkstyle Plugin -->
       <plugin>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>2.8</version>
+        <version>3.1.2</version>
       </plugin>
 
+      <!-- Maven Compiler Plugin -->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.10.1</version> <!-- Updated version for Java 17 support -->
       </plugin>
 
+      <!-- Maven Javadoc Plugin -->
       <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.8</version>
+        <version>3.2.0</version>
       </plugin>
 
+      <!-- Maven JXR Plugin -->
       <plugin>
         <artifactId>maven-jxr-plugin</artifactId>
-        <version>2.3</version>
-      </plugin>
-
-      <plugin>
-        <artifactId>maven-pmd-plugin</artifactId>
-        <version>2.6</version>
-      </plugin>
-
-      <plugin>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>2.4</version>
-      </plugin>
-
-      <plugin>
-        <artifactId>maven-release-plugin</artifactId>
-        <version>2.2.1</version>
-      </plugin>
-
-      <plugin>
-        <artifactId>maven-resources-plugin</artifactId>
-        <version>2.5</version>
-      </plugin>
-
-      <plugin>
-        <artifactId>maven-site-plugin</artifactId>
         <version>3.0</version>
       </plugin>
 
+      <!-- Maven PMD Plugin -->
+      <plugin>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.14.0</version>
+      </plugin>
+
+      <!-- Maven Project Info Reports Plugin -->
+      <plugin>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>3.1.0</version>
+      </plugin>
+
+      <!-- Maven Release Plugin -->
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.0</version> <!-- Updated version -->
+      </plugin>
+
+      <!-- Maven Resources Plugin -->
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.2.0</version>
+      </plugin>
+
+      <!-- Maven Site Plugin -->
+      <plugin>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.9.1</version> <!-- Updated version -->
+      </plugin>
+
+      <!-- Maven Surefire Report Plugin -->
       <plugin>
         <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>2.11</version>
+        <version>3.0.0</version> <!-- Updated version -->
       </plugin>
 
+      <!-- Maven Surefire Plugin -->
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.11</version>
+        <version>3.0.0</version> <!-- Updated version -->
       </plugin>
 
+      <!-- Maven Findbugs Plugin -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
-        <
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>3.0.5</version> <!-- Updated version -->
+      </plugin>
+
+      <!-- Maven Taglist Plugin -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>taglist-maven-plugin</artifactId>
+        <version>2.5</version> <!-- Updated version -->
+      </plugin>
+    </plugins>
+  </pluginManagement>
+</build>
